@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jf.aquarium"
+    android:versionCode="3"
+    android:versionName="1.1" >
+
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="5"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    
+    <application android:icon="@drawable/ic_launcher" android:label="@string/tituloAplicacion" android:debuggable="true" >
+       
+       <!-- Principal Activity -->
+        <activity android:name=".AquariumControl"
+                  android:label="@string/tituloAplicacion">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!--  Entrada datos Activity -->
+        <activity android:name=".EntradaDatosActivity" >
+            <intent-filter>
+                <action android:name="com.aquarium.CAPTURACAMARA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 
+        <!--  Graficos Activity -->
+        <activity android:name=".GraficosActivity" />
+ 
+        <!--  Historial Activity -->
+        <activity android:name=".VisualizacionDatosActivity">
+            <intent-filter>
+				<action android:name="com.aquarium.VISUALIZACIONDATOSACTIVITY" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity>  
+       
+        <!--  Configuración Activity -->
+        <activity android:name="jf.aquarium.ConfiguracionActivity" />
+        
+        <!--  Cámara Activity -->
+        
+        <activity android:name="jf.aquarium.CamaraCaptura" 
+             android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.aquarium.ENTRADADATOSACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+         </activity>
+         
+        <!--  Generador de Gráficos Activity -->
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        
+        <!-- Receptor de aranque para la alarma de abonado -->
+        <receiver android:name="jf.aquarium.alarma.ReceptorArranque">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="jf.aquarium.alarma.ReceptorAlarma"/>
+        <service  android:name="jf.aquarium.alarma.RecordatorioService"></service>
+ 
+       </application>
+    
+    
+</manifest>

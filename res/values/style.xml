@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<resources>
+	  <style name="MyTheme" parent="android:Theme.Light">
+	    <item name="android:textAppearance">@style/estiloTexto</item>
+	  </style>
+	 
+ 	  <style name="estiloTexto" parent="@android:style/TextAppearance">
+	    <item name="android:textSize">10sp</item>
+	    <item name="android:textColor">#333</item>
+   		<item name="android:textStyle">bold</item>
+	  </style>
+	  
+	  <style name="estiloLineaListadoFecha" parent="@android:style/Widget.TextView"> 
+        <item name="android:textSize">17sp</item>
+	    <item name="android:textColor">@color/Aquamarine</item>
+   		<item name="android:textStyle">bold</item>
+      </style>
+      
+	  <style name="estiloLineaListadoFechaHora" parent="@android:style/Widget.TextView"> 
+        <item name="android:textSize">13sp</item>
+	    <item name="android:textColor">@color/Aquamarine</item>
+   		<item name="android:textStyle">bold</item>
+      </style>
+      
+	  <style name="estiloLineaListado" parent="@android:style/Widget.TextView"> 
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingRight">2sp</item>
+      </style>
+      
+	  <style name="Boton.Abono" parent="@android:style/Widget.Button">
+		 <item name="android:background">@drawable/boton_verde</item>
+         <item name="android:textStyle">bold</item>
+         <item name="android:textSize">25dp</item>
+         <item name="android:gravity">center</item>
+	  </style>
+      
+      <style name="Boton.Aceptar" parent="@android:style/Widget.Button">
+		 <item name="android:background">@drawable/boton_azul</item>
+         <item name="android:textStyle">bold</item>
+         <item name="android:textSize">15dp</item>
+         <item name="android:gravity">center</item>
+	  </style>
+	  
+      <style name="Literal.espaciado" parent="@android:style/TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor"> @color/MidnightBlue</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+      </style>
+    
+      <style name="Literal.normal" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/Aquamarine</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+   	  </style>
+	  
+        
+</resources>

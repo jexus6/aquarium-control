@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+   		android:orientation="vertical" 
+   		android:background="@drawable/gradiente_azul_vertical">
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/literalFecha"
+        style="@style/Literal.espaciado"
+      />
+    </LinearLayout>>
+  
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.70"
+        android:fillViewport="true"
+        android:scrollbars="none" 
+        >
+        
+	  <RelativeLayout
+	      android:id="@+id/relativeLayout1"
+	      android:layout_width="fill_parent"
+	      android:layout_height="860dp" >
+
+	      <TextView
+	          android:id="@+id/textView4"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_centerHorizontal="true"
+	          android:layout_marginTop="10dp"
+	          android:text="@string/literalParametros"
+	          style="@style/Literal.normal"
+	       />
+	      
+	      <View
+	          android:id="@+id/View01"
+	          android:layout_width="fill_parent"
+	          android:layout_height="2dip"
+	          android:layout_alignParentLeft="true"
+	          android:layout_below="@+id/textView4"
+	          android:background="@drawable/gradiente_azul_horizonal_central" />
+
+	      <TextView
+	          android:id="@+id/TextView01"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_marginLeft="28dp"
+	          android:layout_marginTop="40dp"
+	          android:text="@string/etiquetaPH"
+	          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	      <EditText
+	          android:id="@+id/editTextPH"
+	          android:layout_width="50dp"
+	          android:layout_height="40dp"
+	          android:layout_alignTop="@+id/TextView01"
+	          android:layout_marginLeft="20dp"
+	          android:layout_toRightOf="@+id/TextView01"
+	          android:inputType="numberDecimal"
+	          android:maxLength="3" >
+	          <requestFocus />
+	      </EditText>
+
+	      <TextView
+	          android:id="@+id/textView1"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignTop="@+id/editTextPH"
+	          android:layout_marginLeft="60dp"
+	          android:layout_toRightOf="@+id/editTextPH"
+	          android:text="@string/etiquetaGH"
+	          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	      <EditText
+	          android:id="@+id/editTextGH"
+	          android:layout_width="50dp"
+	          android:layout_height="40dp"
+	          android:layout_alignTop="@+id/textView1"
+	          android:layout_marginLeft="20dp"
+	          android:layout_toRightOf="@+id/textView1"
+	          android:inputType="number"
+	          android:maxLength="2" />
+
+	      <!-- Segunda linea -->
+
+	      <TextView
+	          android:id="@+id/TextView02"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_below="@id/TextView01"
+	          android:layout_marginLeft="28dp"
+	          android:layout_marginTop="35dp"
+	          android:text="@string/etiquetaNH3"
+	          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	      <EditText
+	          android:id="@+id/editTextNH3"
+	          android:layout_width="50dp"
+	          android:layout_height="40dp"
+	          android:layout_alignLeft="@+id/editTextPH"
+	          android:layout_alignTop="@+id/TextView02"
+	          android:inputType="numberDecimal" 
+	          android:maxLength="4"/>
+
+	      <EditText
+	          android:id="@+id/editTextNO2"
+	          android:layout_width="50dp"
+	          android:layout_height="40dp"
+	          android:layout_alignLeft="@+id/editTextGH"
+	          android:layout_alignTop="@+id/editTextNH3"
+	          android:inputType="numberDecimal"
+	          android:maxLength="4"/>
+
+	      <TextView
+	          android:id="@+id/TextView03"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignLeft="@+id/textView1"
+	          android:layout_alignTop="@+id/editTextNO2"
+	          android:text="@string/etiquetaNO2"
+	          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	      <TextView
+	          android:id="@+id/textView2"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignLeft="@+id/TextView02"
+	          android:layout_below="@+id/editTextNH3"
+	          android:layout_marginTop="40dp"
+	          android:text="@string/literalAbonado"
+	          style="@style/Literal.normal" />
+	      
+	      <View
+	          android:id="@+id/View01vis"
+	          android:layout_width="fill_parent"
+	          android:layout_height="2dip"
+	          android:layout_alignParentLeft="true"
+	          android:layout_below="@+id/textView2"
+	          android:background="@drawable/gradiente_azul_horizonal_central" />
+
+	      <CheckBox
+	          android:id="@+id/checkNi"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignLeft="@+id/textView2"
+	          android:layout_below="@+id/textView2"
+	          android:text="@string/literalNitrogeno" />
+
+	      <CheckBox
+	          android:id="@+id/checkPotasio"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignLeft="@+id/checkNi"
+	          android:layout_below="@+id/checkNi"
+	          android:text="@string/literalPotasio" />
+
+	      <CheckBox
+	          android:id="@+id/checkCarbono"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignLeft="@+id/checkPotasio"
+	          android:layout_below="@+id/checkPotasio"
+	          android:text="@string/literalCarbono" />
+
+	      <TextView
+	          android:id="@+id/textView5"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_above="@+id/checkNi"
+	          android:layout_alignLeft="@+id/TextView03"
+	          android:text="@string/tituloCambioDeAgua"
+	          style="@style/Literal.normal" />
+
+	      <TextView
+	          android:id="@+id/textView6"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_below="@+id/checkCarbono"
+	          android:paddingTop="20dp"
+	          android:layout_centerHorizontal="true"
+	          android:text="@string/literalFoto"
+	          style="@style/Literal.normal" />
+	     
+	      <View  
+	             android:layout_width = "fill_parent" 
+	             android:layout_height="2dip" 
+	             android:layout_centerVertical ="true"
+	             android:layout_above="@+id/imageButtonFoto"
+	             android:background="@drawable/gradiente_azul_horizonal_central" />
+	      <ImageButton
+	          android:id="@+id/imageButtonFoto"
+	          android:layout_width="100dp"
+	          android:layout_height="100dp"
+	          android:layout_centerVertical="true"
+	          android:layout_centerHorizontal="true"
+	          android:layout_below="@+id/textView6"
+	          android:scaleType="centerInside"
+	          android:contentDescription="@string/literalDescripcionFoto"
+	          android:background="@drawable/ic_menu_camara"
+	           />
+	            
+	   	  <View 
+	          android:layout_width = "fill_parent" 
+	          android:layout_height="2dip" 
+	          android:layout_centerVertical ="true" 
+	          android:layout_below="@+id/imageButtonFoto"
+	          android:background="@drawable/gradiente_azul_horizonal_central" />
+
+	      <TextView
+	          android:id="@+id/textView3"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:paddingTop="20dp"
+	          android:layout_below="@+id/imageButtonFoto"
+	          android:layout_centerHorizontal="true"
+	          android:text="@string/literalObservaciones"
+	          style="@style/Literal.normal" />
+
+	      <EditText
+	          android:id="@+id/editTextObservaciones"
+	          android:layout_width="fill_parent"
+	          android:layout_height="100dp"
+	          android:layout_alignParentLeft="true"
+	          android:layout_below="@+id/textView3"
+	          android:inputType="textMultiLine" />
+
+	      <Button
+	          android:id="@+id/botonGuardar"
+	          android:layout_width="150dp"
+	          android:layout_height="40dp"
+	          android:layout_below="@+id/editTextObservaciones"
+	          android:layout_centerHorizontal="true"
+	          android:layout_marginTop="25dp"
+	          android:text="@string/literalGuardar"
+	          style="@style/Boton.Aceptar" />
+
+	      <ImageButton
+	          android:id="@+id/imageCambioAgua"
+	          android:layout_width="40dp"
+	          android:layout_height="40dp"
+	          android:layout_above="@+id/checkPotasio"
+	          android:layout_toRightOf="@+id/textView1"
+	          android:onClick="onClickCambioAgua"
+	          android:background="@drawable/gradiente_azul_oscuro_vertical"
+	          android:contentDescription="@string/literalDescripcionCambioAgua"
+	          android:src="@drawable/ic_tab_cambio_agua"
+	          android:scaleType="center"
+	          android:adjustViewBounds="true"
+	          
+	           />
+
+	  </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

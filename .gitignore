@@ -1,4 +1,11 @@
 bin/
+.metadata
+.settings
+.projects
+.project
+.classpath
+lib/
+
 # Gradle files
 .gradle/
 build/

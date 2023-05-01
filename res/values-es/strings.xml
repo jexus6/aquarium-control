@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="tituloAplicacion">Acuario Control</string>
+    <string name="tituloHistorial">Historial</string>
+    <string name="tituloGraficos">Gráficos</string>
+    <string name="tituloDatos">Datos</string>
+    <string name="tituloConfiguracion">Configuracion</string>
+    <string name="tituloConfParametros">Valores límite de parámetros</string>
+    <string name="tituloConfAbonado">Rutina de abonado</string>
+    <string name="tituloConfAbonadoDialog">Días para abonar con</string>
+    <string name="tituloCambioDeAgua">Cambio de Agua</string>
+    <string name="avisoAlarma">Alarma programada</string>
+    <string name="avisoValoresActualizados">Valores actualizados</string>
+    <string name="etiquetaPH">PH</string>
+    <string name="etiquetaNO2">NO2</string>
+    <string name="etiquetaGH">GH</string>
+    <string name="etiquetaNH3">NH3</string>
+    <string name="etiquetaVacio"> </string>
+    <string name="etiquetaAcciones">Acciones</string>
+    <string name="literalSeleccion">Seleccione</string>
+    <string name="literalSalir">Salir</string>
+    <string name="literalFecha">Fecha</string>
+    <string name="literalParametros">Parámetros</string>
+    <string name="literalAbonado">Abonado</string>
+    <string name="literalObservaciones">Observaciones</string>
+    <string name="literalPotasio">(P) Potasio</string>
+    <string name="literalNitrogeno">(N) Nitrogeno</string>
+    <string name="literalCarbono">(C) Carbono</string>
+    <string name="literalPotasioCorto">(P)</string>
+    <string name="literalNitrogenoCorto">(N)</string>
+    <string name="literalCarbonoCorto">(C)</string>
+    <string name="literalGuardar">Guardar</string>
+    <string name="literalAceptar">Aceptar</string>
+    <string name="literalNombreAplicacion">Acuario Control</string>
+    <string name="literalEvolucion">Evolución</string>
+    <string name="literalMaximo">Máximo</string>
+    <string name="literalMinimo">Mínimo</string>
+    <string name="literalFechas">Fechas</string>
+    <string name="literalFoto">Foto</string>
+    <string name="literalDescripcionFoto">Foto del acuario</string>
+    <string name="literalDescripcionCambioAgua">Seleccione si ha cambiado el agua</string>
+    <string name="etiquetaPHMax"> &gt; PH &gt; </string>
+    <string name="etiquetaGHMax"> &gt; GH &gt; </string>
+    <string name="etiquetaMaximo">Max.</string>
+    <string name="etiquetaMinimo">Min.</string>
+    <string name="etiquetaNH3Max"> &gt; NH3  </string>
+    <string name="etiquetaNO2Max"> &gt; NO2  </string>
+    <string-array name="arraySemana">
+        <item>Domingo</item>
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+    </string-array>
+    
+    
+  
+    
+</resources>

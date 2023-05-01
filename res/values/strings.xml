@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="tituloAplicacion">Aquarium Control</string>
+    <string name="tituloHistorial">Record</string>
+    <string name="tituloGraficos">Graphics</string>
+    <string name="tituloDatos">Data</string>
+    <string name="tituloConfiguracion">Settings</string>
+    <string name="tituloConfParametros">Maximum parameters values</string>
+    <string name="tituloConfAbonado">Fertilizing sequence</string>
+    <string name="tituloConfAbonadoDialog">Days to fertilize with</string>
+    <string name="tituloCambioDeAgua">Water change</string>
+    <string name="avisoAlarma">Alarm set</string>
+    <string name="avisoValoresActualizados">Updated values</string>
+    <string name="etiquetaPH">PH</string>
+    <string name="etiquetaNO2">NO2</string>
+    <string name="etiquetaGH">GH</string>
+    <string name="etiquetaNH3">NH3</string>
+    <string name="etiquetaVacio"> </string>
+    <string name="etiquetaAcciones">Actions</string>
+    <string name="literalSeleccion">Click to select</string>
+    <string name="literalSalir">Close</string>
+    <string name="literalFecha">Date</string>
+    <string name="literalParametros">Parameters</string>
+    <string name="literalAbonado">Fertilizing</string>
+    <string name="literalObservaciones">Notes</string>
+    <string name="literalPotasio">(P) Potassium</string>
+    <string name="literalNitrogeno">(N) Nitrogen</string>
+    <string name="literalCarbono">(C) Carbon</string>
+    <string name="literalPotasioCorto">(P)</string>
+    <string name="literalNitrogenoCorto">(N)</string>
+    <string name="literalCarbonoCorto">(C)</string>
+    <string name="literalGuardar">Save</string>
+    <string name="literalAceptar">OK</string>
+    <string name="literalNombreAplicacion">Aquarium Control</string>
+    <string name="literalEvolucion">Progress</string>
+    <string name="literalMaximo">Maximum</string>
+    <string name="literalMinimo">Minimum</string>
+    <string name="literalFechas">Dates</string>
+    <string name="literalFoto">Photo</string>
+    <string name="literalDescripcionFoto">Picture of the aquarium</string>
+    <string name="literalDescripcionCambioAgua">Select if you has changed the water</string>
+    <string name="etiquetaPHMax"> &gt; PH &gt; </string>
+    <string name="etiquetaGHMax"> &gt; GH &gt; </string>
+    <string name="etiquetaMaximo">Max.</string>
+    <string name="etiquetaMinimo">Min.</string>
+    <string name="etiquetaNH3Max"> &gt; NH3  </string>
+    <string name="etiquetaNO2Max"> &gt; NO2  </string>
+    <string-array name="arraySemana">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    
+    
+  
+    
+</resources>

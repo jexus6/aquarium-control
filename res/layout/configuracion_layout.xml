@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <ScrollView
+     android:id="@+id/scrollView1"
+     android:layout_width="fill_parent"
+     android:layout_height="0dip"
+     android:layout_weight="1.70"
+     android:fillViewport="true"
+     android:scrollbars="none" >
+        
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp" >
+
+        <!-- Titulo parámetros -->
+        <TextView
+            android:id="@+id/TextViewValoresMaximos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/tituloConfParametros"
+            style="@style/Literal.normal" />
+        <View
+            android:id="@+id/lineaValoresMaximos"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_below="@id/TextViewValoresMaximos"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gradiente_azul_horizontal"/>/
+
+        <!-- Cabecera MAX y MIN -->
+        <TextView
+            android:id="@+id/textViewMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/editTextPHMax"
+            android:layout_alignTop="@+id/textViewMin"
+            android:text="@string/etiquetaMaximo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/textViewMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineaValoresMaximos"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/TextViewPHMax"
+            android:text="@string/etiquetaMinimo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- PH -->
+        <TextView
+            android:id="@+id/TextViewPHMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineaValoresMaximos"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/etiquetaPHMax"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextPHMax"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/TextViewPHMax"
+            android:layout_toLeftOf="@id/TextViewPHMax"
+            android:inputType="numberDecimal" 
+            android:maxLength="3"/>
+
+        <EditText
+            android:id="@+id/editTextPHMin"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/TextViewPHMax"
+            android:layout_toRightOf="@id/TextViewPHMax"
+            android:inputType="numberDecimal" 
+            android:maxLength="3"/>
+
+        <!-- GH -->
+
+        <TextView
+            android:id="@+id/TextViewGHMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextViewPHMax"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/etiquetaGHMax"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextGHMax"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/TextViewGHMax"
+            android:layout_toLeftOf="@id/TextViewGHMax"
+            android:inputType="numberDecimal" 
+            android:maxLength="2"/>
+
+        <EditText
+            android:id="@+id/editTextGHMin"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/TextViewGHMax"
+            android:layout_toRightOf="@id/TextViewGHMax"
+            android:inputType="numberDecimal" 
+            android:maxLength="2"/>
+
+        <!-- NH3 -->
+
+        <TextView
+            android:id="@+id/TextViewNH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewGHMax"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/etiquetaNH3Max"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNH3"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/TextViewNH3"
+            android:layout_toLeftOf="@+id/TextViewNH3"
+            android:inputType="numberDecimal" 
+            android:maxLength="4"/>
+
+        <!-- NO2 -->
+
+        <TextView
+            android:id="@+id/TextViewNO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextViewNH3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="@string/etiquetaNO2Max"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNO2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/TextViewNO2"
+            android:layout_toLeftOf="@+id/TextViewNO2"
+            android:inputType="numberDecimal"
+            android:maxLength="4" />
+        
+        <Button
+            android:id="@+id/botonGuardar"
+	        android:layout_width="150dp"
+	        android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/TextViewNO2"
+            android:layout_marginTop="25dp"
+	        android:text="@string/literalGuardar"
+	        style="@style/Boton.Aceptar"
+	        android:onClick="onClickGuardar"
+             />
+
+        <!-- Título abonado -->
+
+        <TextView
+            android:id="@+id/TextViewRutinaAbonado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:text="@string/tituloConfAbonado"
+            style="@style/Literal.normal"
+             />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_below="@id/TextViewRutinaAbonado"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gradiente_azul_horizontal" />
+
+        <Button
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@+id/textViewMax"
+            android:onClick="onClickAbonadoPo"
+            android:text="@string/literalPotasioCorto"
+            style="@style/Boton.Abono" />" 
+
+        <Button
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageButton1"
+            android:layout_centerHorizontal="true"
+            android:onClick="onClickAbonadoNi"
+            android:text="@string/literalNitrogenoCorto"
+            style="@style/Boton.Abono" />
+
+        <Button
+            android:id="@+id/imageButton3"
+            style="@style/Boton.Abono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_toRightOf="@+id/textViewMin"
+            android:onClick="onClickAbonadoC"
+            android:text="@string/literalCarbonoCorto" />
+
+    
+        
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout> 

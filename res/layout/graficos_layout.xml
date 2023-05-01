@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:gravity="center_horizontal"
+   android:paddingTop="15dp"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent">
+   
+    <Button
+        android:id="@+id/graficoPH"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:onClick="graficoPhAccion"
+        android:layout_marginTop="15dp"
+        style="@style/Boton.Abono"
+        android:text="@string/etiquetaPH" />
+    <Button
+        android:id="@+id/graficoGH"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:onClick="graficoGhAccion"
+        android:layout_marginTop="15dp"
+        style="@style/Boton.Abono"
+        android:text="@string/etiquetaGH" />
+	<Button android:id = "@+id/graficoNO2"
+	    android:layout_height="wrap_content"
+	    android:layout_width="80dp"
+	    android:onClick="graficoNo2Accion"
+        android:layout_marginTop="15dp"
+	    style="@style/Boton.Abono"
+	    android:text="@string/etiquetaNO2" />
+	<Button
+	    android:id="@+id/graficoNH3"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:onClick="graficoNh3Accion"
+	    style="@style/Boton.Abono"
+	    android:layout_marginTop="15dp"
+	    android:text="@string/etiquetaNH3" />
+    
+</LinearLayout> 

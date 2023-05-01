@@ -1,0 +1,204 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical" >
+
+          <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/textFechaFila"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/estiloLineaListadoFecha" />
+            <TextView
+                android:id="@+id/textFechaFilaHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/estiloLineaListadoFechaHora" />
+		    <LinearLayout
+	            android:id="@+id/linearLayout2vis"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:orientation="horizontal" >            
+	            <ImageView
+				    android:id="@+id/imageCambioAgua"
+				    android:scaleType="fitXY"
+				    android:layout_width="45dp"
+				    android:layout_height="36dp"
+				    android:layout_marginRight="10dp"
+				    android:contentDescription="@string/tituloCambioDeAgua"
+				    android:src="@drawable/ic_tab_cambio_agua_unselected"/>
+	           </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/linearLayoutImagen"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+               >
+	              <ImageView
+	                  android:id="@+id/imageFoto"
+	                  android:layout_width="60dp"
+	                  android:layout_height="60dp"
+	                  android:contentDescription="@string/literalFoto"
+	                  android:paddingBottom="5dp"
+	                  android:paddingLeft="7dp"
+	                  android:paddingRight="7dp"
+	                  android:scaleType="centerInside"
+	                  android:src="@drawable/ic_launcher" />	              
+			   	  <LinearLayout
+		              android:id="@+id/linearLayoutContenido"
+		              android:layout_width="wrap_content"
+		              android:layout_height="wrap_content"
+		              android:orientation="horizontal" 
+		             >
+			
+			              <LinearLayout
+			                  android:id="@+id/linearLayout4"
+			                  android:layout_width="wrap_content"
+			                  android:layout_height="wrap_content"
+			                  android:layout_gravity="center"
+			                  android:orientation="vertical" >
+			
+			                  <TextView
+			                      android:id="@+id/textView2"
+			                      style="@style/estiloLineaListado"
+			                      android:layout_width="wrap_content"
+			                      android:layout_height="wrap_content"
+			                      android:text="@string/etiquetaPH"
+			                      android:textColor="@color/azul" />
+			
+			                  <TextView
+			                      android:id="@+id/textView3"
+			                      style="@style/estiloLineaListado"
+			                      android:layout_width="wrap_content"
+			                      android:layout_height="wrap_content"
+			                      android:text="@string/etiquetaGH"
+			                      android:textColor="@color/azul" />
+			                  
+			              </LinearLayout>
+			
+			              <LinearLayout
+			                  android:id="@+id/linearLayout5"
+			                  android:layout_width="wrap_content"
+			                  android:layout_height="wrap_content"
+			                  android:layout_gravity="center"
+			                  android:orientation="vertical" >
+			
+			                  <TextView
+			                      android:id="@+id/textViewPH"
+			                      style="@style/estiloLineaListado"
+			                      android:layout_width="wrap_content"
+			                      android:layout_height="wrap_content"
+			                      android:text="@string/etiquetaVacio" />
+			
+			                  <TextView
+			                      android:id="@+id/textViewGH"
+			                      style="@style/estiloLineaListado"
+			                      android:layout_width="wrap_content"
+			                      android:layout_height="wrap_content"
+			                      android:text="@string/etiquetaVacio" />
+			              </LinearLayout>
+			
+			              <LinearLayout
+			                  android:id="@+id/linearLayout6"
+			                  android:layout_width="fill_parent"
+			                  android:layout_height="wrap_content"
+			                  android:layout_gravity="center"
+			                  android:orientation="vertical"
+			                  android:paddingLeft="10dp" >
+			
+			                  <TextView
+			                      android:id="@+id/TextView02"
+			                      style="@style/estiloLineaListado"
+			                      android:layout_width="wrap_content"
+			                      android:layout_height="wrap_content"
+			                      android:text="@string/etiquetaNO2"
+			                      android:textColor="@color/azul" />
+			
+			                  <TextView
+			                      android:id="@+id/TextView01"
+			                      style="@style/estiloLineaListado"
+			                      android:layout_width="wrap_content"
+			                      android:layout_height="wrap_content"
+			                      android:text="@string/etiquetaNH3"
+			                      android:textColor="@color/azul" />
+			              </LinearLayout>
+			
+			              <LinearLayout
+			                  android:id="@+id/linearLayout7"
+			                  android:layout_width="fill_parent"
+			                  android:layout_height="wrap_content"
+			                  android:layout_gravity="center"
+			                  android:orientation="vertical" >
+			
+			                  <TextView
+			                      android:id="@+id/textViewNO2"
+			                      style="@style/estiloLineaListado"
+			                      android:layout_width="wrap_content"
+			                      android:layout_height="wrap_content"
+			                      android:text="@string/etiquetaVacio" />
+			
+			                  <TextView
+			                      android:id="@+id/textViewNH3"
+			                      style="@style/estiloLineaListado"
+			                      android:layout_width="wrap_content"
+			                      android:layout_height="wrap_content"
+			                      android:text="@string/etiquetaVacio" />
+			              </LinearLayout>
+			     </LinearLayout>
+			
+			      <LinearLayout
+		              android:id="@+id/linearLayoutAbono"
+		              android:layout_width="fill_parent"
+		              android:layout_height="wrap_content"
+		              android:orientation="vertical"
+		              android:gravity="center"
+		              >
+					
+			        <TextView
+			 	        android:id="@+id/textView5"
+			            style="@style/estiloLineaListado"
+			             android:layout_width="wrap_content"
+			             android:layout_height="wrap_content"
+			             android:text="@string/literalAbonado"
+			             android:textColor="@color/verde" />
+	    		    <LinearLayout
+		              android:id="@+id/linearLayoutAbonoVis"
+		              android:layout_width="fill_parent"
+		              android:layout_height="wrap_content"
+		              android:orientation="horizontal"
+		              android:gravity="center">
+				        <ImageView
+				            android:id="@+id/imageAbonoN"
+				            android:layout_width="30dp"
+				            android:layout_height="30dp"
+				            android:scaleType="fitXY"
+				            android:contentDescription="@string/literalNitrogeno"
+				            android:src="@drawable/ic_listado_n_unselected" />
+				        <ImageView
+				            android:id="@+id/imageAbonoP"
+				            android:layout_width="30dp"
+				            android:layout_height="30dp"
+				            android:scaleType="fitXY"
+				            android:contentDescription="@string/literalPotasio"
+				            android:src="@drawable/ic_listado_p_unselected" />
+				        <ImageView
+				            android:id="@+id/imageAbonoC"
+				            android:layout_width="30dp"
+				            android:layout_height="30dp"
+				            android:scaleType="fitXY"
+				            android:contentDescription="@string/literalCarbono"
+				            android:src="@drawable/ic_listado_c_unselected" />
+				     </LinearLayout>
+			      </LinearLayout>
+		    </LinearLayout>
+    </LinearLayout>
